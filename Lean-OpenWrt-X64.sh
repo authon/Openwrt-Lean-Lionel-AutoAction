@@ -16,6 +16,7 @@ cat feeds.conf.default
 # rm -rf feeds/packages/net/haproxy && svn co https://github.com/kang-mk/openwrt-app-package/trunk/haproxy feeds/packages/net/haproxy
 
 # 添加第三方软件包
+svn co https://github.com/kenzok8/openwrt-packages/trunk/luci-app-passwall package/luci-app-passwall #svn命令可以克隆库里面的单一文件夹，使用trunk代替
 svn co https://github.com/kang-mk/openwrt-app-package/trunk/luci-app-smartinfo package/luci-app-smartinfo
 # git clone https://github.com/fw876/helloworld package/helloworld #上方feeds处已添加
 git clone https://github.com/destan19/OpenAppFilter package/OpenAppFilter
@@ -139,12 +140,13 @@ CONFIG_PACKAGE_luci-app-adguardhome=y #ADguardhome
 # CONFIG_PACKAGE_luci-app-smartinfo=y #磁盘健康监控
 EOF
 
-# ShadowsocksR插件:
+# ShadowsocksR passwall插件:
 cat >> .config <<EOF
 CONFIG_PACKAGE_luci-app-ssr-plus=y
 CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks=y
 CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_ShadowsocksR_Socks=y
 CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_V2ray=y
+CONFIG_PACKAGE_luci-luci-app-passwall=y
 EOF
 
 # 常用LuCI插件(禁用):
