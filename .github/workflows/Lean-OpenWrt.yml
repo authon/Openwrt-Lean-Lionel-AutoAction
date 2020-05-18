@@ -19,9 +19,9 @@ on:
 #    branches: 
 #      - master
 
-config触发
- paths:
-   - 'Lean-OpenWrt-X64.sh'
+# config触发
+#  paths:
+#    - 'x86_64.config'
 
 #SSH_ACTIONS 开启SSH连接
 #UPLOAD_BIN_DIR上传BIN目录
