@@ -147,7 +147,7 @@ CONFIG_PACKAGE_luci-app-ssr-plus=y
 CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks=y
 CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_ShadowsocksR_Socks=y
 CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_V2ray=y
-CONFIG_PACKAGE_luci-luci-app-passwall=y
+CONFIG_PACKAGE_luci-app-passwall=y
 EOF
 
 # 常用LuCI插件(禁用):
