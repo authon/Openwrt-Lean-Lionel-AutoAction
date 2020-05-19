@@ -148,18 +148,18 @@ CONFIG_PACKAGE_luci-app-ssr-plus=y
 CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks=y
 CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_ShadowsocksR_Socks=y
 CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_V2ray=y
-# CONFIG_PACKAGE_luci-app-passwall=y
+# CONFIG_PACKAGE_luci-app-passwall is not set
 EOF
 
 # 常用LuCI插件(禁用):
 cat >> .config <<EOF
-# CONFIG_PACKAGE_luci-app-transmission is not set #TR离线下载
-# CONFIG_PACKAGE_luci-app-qbittorrent is not set #QB离线下载
+CONFIG_PACKAGE_luci-app-transmission=y #TR离线下载
+CONFIG_PACKAGE_luci-app-qbittorrent=y #QB离线下载
 # CONFIG_PACKAGE_luci-app-amule is not set #电驴离线下载
-# CONFIG_PACKAGE_luci-app-xlnetacc is not set #迅雷快鸟
+CONFIG_PACKAGE_luci-app-xlnetacc=y #迅雷快鸟
 # CONFIG_PACKAGE_luci-app-zerotier is not set #zerotier内网穿透
 # CONFIG_PACKAGE_luci-app-hd-idle is not set #磁盘休眠
-# CONFIG_PACKAGE_luci-app-wrtbwmon is not set #实时流量监测
+CONFIG_PACKAGE_luci-app-wrtbwmon=y #实时流量监测
 CONFIG_PACKAGE_luci-app-unblockmusic=y #解锁网易云灰色歌曲
 # CONFIG_PACKAGE_luci-app-airplay2 is not set #Apple AirPlay2音频接收服务器
 # CONFIG_PACKAGE_luci-app-music-remote-center is not set #PCHiFi数字转盘遥控
