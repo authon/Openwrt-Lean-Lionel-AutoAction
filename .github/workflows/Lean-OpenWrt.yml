@@ -112,7 +112,7 @@ jobs:
           find openwrt/bin/targets/ -name "*uefi*img*" | xargs -i mv -f {} ./artifact/
 
     - name: 上传固件
-      uses: actions/upload-artifact@master
+      uses: actions/upload-artifact@v2
       with:
         name: OpenWrt_firmware_Lean_${{ env.FILENAME }}
         path: ./artifact/
