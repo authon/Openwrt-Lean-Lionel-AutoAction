@@ -96,7 +96,7 @@ jobs:
         echo "::set-output name=status::success"
 
     - name: 上传BIN目录
-      uses: actions/upload-artifact@master
+      uses: actions/upload-artifact@v2
       if: steps.compile.outputs.status == 'success' && env.UPLOAD_BIN_DIR == 'true'
       with:
         name: OpenWrt_bin_Lean_${{ env.FILENAME }}
